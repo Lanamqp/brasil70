@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Brasil nos Anos 70</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Quiz: Brasil nos Anos 70</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Escolha um quiz para testar seus conhecimentos sobre o Brasil nos anos 70!</h2>
+        
+        <!-- Lista de Quizzes -->
+        <div class="quiz-list">
+            <div class="quiz-item">
+                <button class="quiz-title" onclick="toggleQuiz('quiz1')">Quiz 1: Milagre Econômico e Política</button>
+                <div id="quiz1" class="quiz-content">
+                    <form id="quiz-form-1">
+                        <div class="quiz-question">
+                            <p><strong>1. Quem foi o presidente do Brasil durante o Milagre Econômico?</strong></p>
+                            <label><input type="radio" name="q1" value="a"> Juscelino Kubitschek</label>
+                            <label><input type="radio" name="q1" value="b"> Emílio Médici</label>
+                            <label><input type="radio" name="q1" value="c"> João Goulart</label>
+                            <label><input type="radio" name="q1" value="d"> Artur da Costa e Silva</label>
+                        </div>
+
+                        <button type="button" onclick="submitQuiz(1)">Enviar Respostas</button>
+                    </form>
+                    <div id="result1" class="quiz-result"></div>
+                </div>
+            </div>
+
+            <div class="quiz-item">
+                <button class="quiz-title" onclick="toggleQuiz('quiz1')">Quiz 1: Milagre Econômico e Política</button>
+                <div id="quiz1" class="quiz-content">
+                    <form id="quiz-form-1">
+                        <div class="quiz-question">
+                            <p><strong>1. Quem foi o presidente do Brasil durante o Milagre Econômico?</strong></p>
+                            <label><input type="radio" name="q1" value="a"> Juscelino Kubitschek</label>
+                            <label><input type="radio" name="q1" value="b"> Emílio Médici</label>
+                            <label><input type="radio" name="q1" value="c"> João Goulart</label>
+                            <label><input type="radio" name="q1" value="d"> Artur da Costa e Silva</label>
+                        </div>
+
+                        <button type="button" onclick="submitQuiz(1)">Enviar Respostas</button>
+                    </form>
+                    <div id="result1" class="quiz-result"></div>
+                </div>
+            </div>
+
+
+            <div class="quiz-item">
+                <button class="quiz-title" onclick="toggleQuiz('quiz2')">Quiz 2: Cultura e Resistência</button>
+                <div id="quiz2" class="quiz-content">
+                    <form id="quiz-form-2">
+                        <div class="quiz-question">
+                            <p><strong>1. Qual evento marcou a resistência política no Brasil durante os anos 70?</strong></p>
+                            <label><input type="radio" name="q1" value="a"> O AI-5</label>
+                            <label><input type="radio" name="q1" value="b"> O Movimento Diretas Já</label>
+                            <label><input type="radio" name="q1" value="c"> O Comício de 1968</label>
+                            <label><input type="radio" name="q1" value="d"> A greve dos metalúrgicos</label>
+                        </div>
+
+                        <button type="button" onclick="submitQuiz(2)">Enviar Respostas</button>
+                    </form>
+                    <div id="result2" class="quiz-result"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Brasil nos Anos 70. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

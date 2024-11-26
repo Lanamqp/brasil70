@@ -1,0 +1,138 @@
+/* Estilos para a Barra de Pesquisa */
+#search-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-bar:focus {
+    border-color: #004d40;
+}
+
+/* Estilos do Carrossel */
+#carrossel {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 100%;
+    max-height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+header .perfil a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos dos Conteúdos */
+#conteudos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conteudo {
+    width: 30%;
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.conteudo p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.conteudo a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conteudo-img {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.conteudo-img img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos do Botão Veja Mais */
+#veja-mais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#veja-mais-btn {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#veja-mais-btn:hover {
+    background-color: #004d40;
+}

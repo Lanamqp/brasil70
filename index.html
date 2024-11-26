@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil nos Anos 70</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Brasil nos Anos 70</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+        <div class="perfil">
+            <a href="perfil.html">Perfil</a>
+        </div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <section id="search-section">
+        <input type="text" id="search-bar" placeholder="Pesquise conteúdos..." onkeyup="searchContent()">
+    </section>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carrossel">
+        <div class="carrossel-container">
+            <div class="slide">
+                <img src="assets/imagem1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="assets/imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="assets/imagem3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo da Página Inicial -->
+    <main>
+        <h2>Bem-vindo ao Brasil nos Anos 70</h2>
+        <p>Explore a história, a cultura e a política do Brasil na década de 1970. Conheça os eventos marcantes dessa era e teste seus conhecimentos com nosso quiz!</p>
+
+        <!-- Conteúdos -->
+        <section id="conteudos">
+            <!-- Primeiros 3 Conteúdos Visíveis -->
+            <div class="conteudo" data-title="O Milagre Econômico">
+                <h3>O Milagre Econômico</h3>
+                <div class="conteudo-img">
+                    <img src="https://static.todamateria.com.br/upload/mi/la/milagreeconomicocartaz-0-cke.jpg" alt="O Milagre Econômico">
+                </div>
+                <p>Saiba tudo sobre o crescimento econômico brasileiro nos anos 70, impulsionado pelo regime militar. O Milagre Econômico foi um período de expansão industrial e grandes investimentos em infraestrutura.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+            <div class="conteudo" data-title="Movimentos Sociais">
+                <h3>Movimentos Sociais</h3>
+                <div class="conteudo-img">
+                    <img src="https://www.projetodraft.com/wp-content/uploads/2021/03/lh-adriano-musica-19070.jpg" alt="Movimentos Sociais">
+                </div>
+                <p>Entenda como os movimentos sociais e as lutas por direitos humanos foram fundamentais na década de 70, no contexto da ditadura militar brasileira.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+            <div class="conteudo" data-title="Cultura e Entretenimento">
+                <h3>Cultura e Entretenimento</h3>
+                <div class="conteudo-img">
+                    <img src="https://static.historiadomundo.com.br/2023/11/mulheres-em-protesto-contra-a-ditadura-nos-anos-70.jpg" alt="Cultura e Entretenimento">
+                </div>
+                <p>Explore a música, moda e a televisão nos anos 70, com destaque para os festivais de música e a popularização das novelas brasileiras.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+
+            <!-- Conteúdos Escondidos -->
+            <div class="conteudo" data-title="Ditadura Militar">
+                <h3>Ditadura Militar</h3>
+                <div class="conteudo-img">
+                    <img src="https://blogfca.pucminas.br/colab/wp-content/uploads/2022/05/Ditadura_Militar.jpg" alt="Ditadura Militar">
+                </div>
+                <p>A Ditadura Militar no Brasil foi um período de repressão política, censura e resistência. Descubra como a política interna e as relações internacionais influenciaram esse período.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+            <div class="conteudo" data-title="A Música Brasileira nos Anos 70">
+                <h3>A Música Brasileira nos Anos 70</h3>
+                <div class="conteudo-img">
+                    <img src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2019/12/a7c5693-Novos-baianos-com-Caetano-Veloso-e-Gilberto-Gil-1024x683.jpg" alt="A Música Brasileira nos Anos 70">
+                </div>
+                <p>Os anos 70 foram marcados por importantes movimentos musicais, como a Tropicália e a Música Popular Brasileira (MPB). Conheça as influências que moldaram a música da época.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+            <div class="conteudo" data-title="A Economia Brasileira no Pós-Guerra">
+                <h3>A Economia Brasileira no Pós-Guerra</h3>
+                <div class="conteudo-img">
+                    <img src="https://pdt.org.br/wp-content/uploads/2016/11/segunda-guerra.jpg" alt="A Economia Brasileira no Pós-Guerra">
+                </div>
+                <p>Após a Segunda Guerra Mundial, o Brasil buscou um desenvolvimento econômico acelerado. Entenda os impactos da industrialização e as políticas econômicas adotadas nos anos 70.</p>
+                <a href="conteudo.html">Leia mais</a>
+            </div>
+        </section>
+
+        <!-- Botão Veja Mais -->
+        <section id="veja-mais">
+            <button id="veja-mais-btn" onclick="loadMoreContent()">Veja Mais</button>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Brasil nos Anos 70. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
