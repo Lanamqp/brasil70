@@ -75,17 +75,17 @@ header .perfil a {
 }
 
 /* Estilos dos Conteúdos */
+/* Estilos do Conteúdos */
 #conteudos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os quadrados */
+    margin-top: 20px;
 }
 
 .conteudo {
-    width: 30%;
     background-color: #e0f7fa;
     padding: 15px;
-    margin: 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -116,6 +116,19 @@ header .perfil a {
     max-width: 250px;
     height: auto;
     border-radius: 5px;
+}
+
+/* Garantir que os itens de conteúdo fiquem ajustados corretamente */
+@media (max-width: 1024px) {
+    #conteudos {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    #conteudos {
+        grid-template-columns: 1fr; /* 1 coluna para telas ainda menores */
+    }
 }
 
 /* Estilos do Botão Veja Mais */

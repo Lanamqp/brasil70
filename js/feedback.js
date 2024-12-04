@@ -1,41 +1,25 @@
-// Função para adicionar o feedback na lista de comentários
-function adicionarComentario(comentarioTexto) {
-    const comentariosLista = document.getElementById("comentarios-lista");
-    
-    // Cria a estrutura de um novo comentário
-    const comentario = document.createElement("div");
-    comentario.classList.add("comentario");
+document.getElementById('feedbackForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
 
-    // Adiciona o texto do comentário
-    const comentarioTexto = document.createElement("p");
-    comentarioTexto.innerText = comentarioTexto;
-    comentario.appendChild(comentarioTexto);
+    const nome = document.getElementById('nome').value;
+    const comentario = document.getElementById('comentario').value;
 
-    // Cria o botão de excluir
-    const botaoExcluir = document.createElement("button");
-    botaoExcluir.innerText = "Excluir";
-    botaoExcluir.onclick = function() {
-        comentario.remove(); // Exclui o comentário
-    };
-    comentario.appendChild(botaoExcluir);
+    try {
+        const response = await fetch('/feedback', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ nome, comentario })
+        });
 
-    // Adiciona o comentário na lista
-    comentariosLista.appendChild(comentario);
-}
-
-// Função para tratar o envio do feedback
-document.getElementById("feedback-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
-
-    const comentarioTexto = document.getElementById("comentario").value;
-    if (comentarioTexto.trim() === "") {
-        alert("Por favor, escreva um comentário antes de enviar.");
-        return;
+        if (response.ok) {
+            alert('Feedback enviado com sucesso!');
+            document.getElementById('feedbackForm').reset();  // Limpa os campos do formulário
+        } else {
+            alert('Erro ao enviar o feedback.');
+        }
+    } catch (error) {
+        alert('Erro ao enviar o feedback: ' + error.message);
     }
-
-    // Adiciona o comentário na lista
-    adicionarComentario(comentarioTexto);
-
-    // Limpa o campo de comentário após o envio
-    document.getElementById("comentario").value = "";
 });
